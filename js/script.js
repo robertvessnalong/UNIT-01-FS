@@ -82,9 +82,13 @@ function printQuote() {
     <p class="quote">${randomQuote.quote}</p>
     <p class="source">${randomQuote.source}
   `;
+
+  // Checks if Citation is empty string
   if (randomQuote.citation !== "") {
     html += `<span class="citation">${randomQuote.citation}</span>`;
   }
+
+  // Checks if Year is empty String
   if (randomQuote.year !== "") {
     html += `<span class="year">${randomQuote.year}</span>`;
   }
